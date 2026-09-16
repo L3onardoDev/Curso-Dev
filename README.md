@@ -8,6 +8,7 @@ Bem-vindo ao repositório principal de arquivos e projetos de estudo! Este diret
 
 ```text
 /
-├── 📁 1-Termo/          # Conteúdos, exercícios e arquivos referentes ao 1º Termo
-├── 📁 2-Termo/          # Disciplinas, projetos práticos e somativas do 2º Termo
-└── 📜 criar_pastas.bat  # Script para automatizar a criação da estrutura de diretórios
+├── 📁 1-Termo/               # Conteúdos, exercícios e arquivos referentes ao 1º Termo
+├── 📁 2-Termo/               # Disciplinas, projetos práticos e somativas do 2º Termo
+├── 📁 JavaScript_Conceitos/  # Anotações, fundamentos e exemplos práticos de JavaScript
+└── 📜 criar_pastas.bat       # Script para automatizar a criação da estrutura de diretórios
