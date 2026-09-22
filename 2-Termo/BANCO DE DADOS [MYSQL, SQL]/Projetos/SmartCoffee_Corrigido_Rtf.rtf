@@ -1,0 +1,300 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil MS Sans Serif;}{\f1\fnil\fcharset0 MS Sans Serif;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\b\f0\fs16 001 - Rela\f1\'e7\'e3o: \cf2\b0 Atende\cf1\b 
+\par \cf0\b0\f0 Rela\f1\'e7\'e3o esta conectando Funcionarios a Pedidos.
+\par Utilizando a cardinalidade: 0,n e 0,n
+\par \f0 
+\par \cf1\b 002 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(11) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 003 - Atributo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(11) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 004 - Atributo: \cf2\b0 Cargo\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(15) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio:
+\par \f0 
+\par \cf1\b 005 - Atributo: \cf2\b0 Categoria\cf1\b 
+\par \cf0\b0 Tipo de dados DATETIME
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 006 - Atributo: \cf2\b0 Checagem_Estoque\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(38) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio:
+\par \f0 
+\par \cf1\b 007 - Atributo: \cf2\b0 Checagem_Pontos\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 008 - Entidade: \cf2\b0 Clientes\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por guardar informa\'e7\'f5es de Clientes.
+\par \f0 
+\par \cf1\b 009 - Rela\f1\'e7\'e3o: \cf2\b0 Consome\cf1\b 
+\par \cf0\b0\f0 Rela\f1\'e7\'e3o esta conectando Estoque a Produtos.
+\par Utilizando a cardinalidade: 0,n e 1,n
+\par \f0 
+\par \cf1\b 010 - Rela\f1\'e7\'e3o: \cf2\b0 Contem\cf1\b 
+\par \cf0\b0\f0 Rela\f1\'e7\'e3o esta conectando Produtos a Pedidos.
+\par Utilizando a cardinalidade: 1,n e 1,n
+\par \f0 
+\par \cf1\b 011 - Atributo: \cf2\b0 Data_Emissao\cf1\b 
+\par \cf0\b0 Tipo de dados DateTime
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: NOT NULL
+\par \f0 
+\par \cf1\b 012 - Atributo: \cf2\b0 Data_Emissao\cf1\b 
+\par \cf0\b0 Tipo de dados DateTime
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio:
+\par \f0 
+\par \cf1\b 013 - Atributo: \cf2\b0 Data_Hora\cf1\b 
+\par \cf0\b0 Tipo de dados Date
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 014 - Atributo: \cf2\b0 Data_Nascimento\cf1\b 
+\par \cf0\b0 Tipo de dados DateTime
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 015 - Atributo: \cf2\b0 Data_Validade_Fidelidade\cf1\b 
+\par \cf0\b0 Tipo de dados DateTime 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 016 - Entidade: \cf2\b0 Delivery\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por guardar informa\'e7\'f5es de Delivery.
+\par \f0 
+\par \cf1\b 017 - Atributo: \cf2\b0 Descricao\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(38) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio:
+\par \f0 
+\par \cf1\b 018 - Atributo: \cf2\b0 Email\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(58) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 019 - Atributo: \cf2\b0 Endereco_Entrega\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 020 - Rela\f1\'e7\'e3o: \cf2\b0 Entrega\cf1\b 
+\par \cf0\b0\f0 Rela\f1\'e7\'e3o esta conectando Delivery a Funcionarios.
+\par Utilizando a cardinalidade: 0,n e 0,n
+\par \f0 
+\par \cf1\b 021 - Entidade: \cf2\b0 Estoque\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por guardar informa\'e7\'f5es de Estoque.
+\par \f0 
+\par \cf1\b 022 - Entidade: \cf2\b0 Funcionarios\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por guardar informa\'e7\'f5es de Funcionarios.
+\par \f0 
+\par \cf1\b 023 - Rela\f1\'e7\'e3o: \cf2\b0 Gera\cf1\b 
+\par \cf0\b0\f0 Rela\f1\'e7\'e3o esta conectando Delivery a Pedidos.
+\par Utilizando a cardinalidade: 0,1 e 0,1
+\par \f0 
+\par \cf1\b 024 - Atributo: \cf2\b0 ID_Cliente\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: Sim  Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 025 - Atributo: \cf2\b0 ID_Delivery\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: Sim  Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 026 - Atributo: \cf2\b0 ID_Estoque\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: Sim  Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 027 - Atributo: \cf2\b0 ID_Funcionarios\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: Sim  Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 028 - Atributo: \cf2\b0 ID_Pagamento\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: Sim Pk
+\par Campo Obrigat\'f3rio:
+\par \f0 
+\par \cf1\b 029 - Atributo: \cf2\b0 ID_Pedidos\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: Sim  Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 030 - Atributo: \cf2\b0 ID_Produtos\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: Sim  Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 031 - Atributo: \cf2\b0 ID_Prog_Fidelidade\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: Sim  Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 032 - Atributo: \cf2\b0 Informacoes_Cartoes\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(60) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 033 - Atributo: \cf2\b0 Informacoes_Cliente\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(58) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 034 - Atributo: \cf2\b0 Informacoes_Cliente\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(50)
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 035 - Atributo: \cf2\b0 Localizacao\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(58) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 036 - Atributo: \cf2\b0 Metodo_Pagamento\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(35) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 037 - Atributo: \cf2\b0 Metodo_Pagamento\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 038 - Atributo: \cf2\b0 Nome\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(32) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 039 - Atributo: \cf2\b0 Nome\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(32) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: NOT NULL
+\par \f0 
+\par \cf1\b 040 - Atributo: \cf2\b0 Nome\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(32) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: NOT NULL
+\par \f0 
+\par \cf1\b 041 - Atributo: \cf2\b0 Nota_Fiscal\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(58) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 042 - Atributo: \cf2\b0 Nota_Fiscal\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(58) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio:
+\par \f0 
+\par \cf1\b 043 - Atributo: \cf2\b0 Novo_Estoque\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(38) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 044 - Entidade: \cf2\b0 Pagamentos\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por guardar informa\'e7\'f5es de Clientes.
+\par \f0 
+\par \cf1\b 045 - Rela\f1\'e7\'e3o: \cf2\b0 Participa\cf1\b 
+\par \cf0\b0\f0 Rela\f1\'e7\'e3o esta conectando Clientes a Prog_Fidelidade
+\par Utilizando a cardinalidade: 1,1 e 1,1
+\par \f0 
+\par \cf1\b 046 - Entidade: \cf2\b0 Pedidos\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por guardar informa\'e7\'f5es de Pedidos.
+\par \f0 
+\par \cf1\b 047 - Atributo: \cf2\b0 Pontos\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 048 - Rela\f1\'e7\'e3o: \cf2\b0 Possui\cf1\b 
+\par \cf0\b0\f0 Rela\f1\'e7\'e3o esta conectando Pagamentos a Pedidos.
+\par Utilizando a cardinalidade: 1,1 e 1,1
+\par \f0 
+\par \cf1\b 049 - Atributo: \cf2\b0 Preco\cf1\b 
+\par \cf0\b0 Tipo de dados INT 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio:
+\par \f0 
+\par \cf1\b 050 - Atributo: \cf2\b0 Preco_Unitario\cf1\b 
+\par \cf0\b0 Tipo de dados INT) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio:
+\par \f0 
+\par \cf1\b 051 - Entidade: \cf2\b0 Produtos\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por guardar informa\'e7\'f5es de Produtos.
+\par \f0 
+\par \cf1\b 052 - Entidade: \cf2\b0 Prog_Fidelidade\cf1\b 
+\par \cf0\b0 Tabela respons\f1\'e1vel por guardar informa\'e7\'f5es de Programa Fidelidade.
+\par \f0 
+\par \cf1\b 053 - Atributo: \cf2\b0 Quantidade\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 054 - Atributo: \cf2\b0 Quantidade\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 055 - Atributo: \cf2\b0 Quem_Pagou\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(32) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 056 - Rela\f1\'e7\'e3o: \cf2\b0 Realiza\cf1\b 
+\par \cf0\b0\f0 Rela\f1\'e7\'e3o esta conectando Clientes a Pedidos.
+\par Utilizando a cardinalidade: 0,n e 0,n
+\par \f0 
+\par \cf1\b 057 - Observa\f1\'e7\'e3o: \cf2\b0 Sistema SmartCoffee\cf1\b 
+\par \cf0\b0\f0 
+\par \cf1\b 058 - Atributo: \cf2\b0 Status\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(32) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 059 - Atributo: \cf2\b0 Status_Pagamento\cf1\b 
+\par \cf0\b0 Tipo de dados VARCHAR(32)
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 060 - Atributo: \cf2\b0 Telefone\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(20) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio:
+\par \f0 
+\par \cf1\b 061 - Atributo: \cf2\b0 Tipo_Pedido\cf1\b 
+\par \cf0\b0 Tipo de dados VARCHAR(32)
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 062 - Atributo: \cf2\b0 Turno\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(18)
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par \cf1\b 063 - Atributo: \cf2\b0 Unidade_Medida\cf1\b 
+\par \cf0\b0 Tipo de dados VARCHAR(15)
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio:
+\par \f0 
+\par \cf1\b 064 - Atributo: \cf2\b0 Valor_Pago\cf1\b 
+\par \cf0\b0 Tipo de dados INT
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: Not Null
+\par \f0 
+\par \cf1\b 065 - Atributo: \cf2\b0 Valor_Total\cf1\b 
+\par \cf0\b0 Tipo de dados Varchar(9) 
+\par Campo chave prim\f1\'e1ria: N\'e3o Pk
+\par Campo Obrigat\'f3rio: 
+\par \f0 
+\par 
+\par }
+ 
