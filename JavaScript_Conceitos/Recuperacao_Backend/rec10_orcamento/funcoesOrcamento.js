@@ -9,7 +9,7 @@ function CalcularTotal (ValorMateriais, Horas) {
 
 function VerificarDesconto (Total) {
     if (Total >= 1000) {
-        console.log("DESCONTO DE 10%")
+        return "DESCONTO DE 10%";
     }
     return "SEM DESCONTO";
 }   
