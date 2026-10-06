@@ -52,4 +52,9 @@ SELECT * FROM ITEM_PEDIDO;
 ----------------------------------- Parte B ----------------------------------- 
 -------------------------------------------------------------------------------
 
--- 7. Corrija o telefone de um dos 
+-- 7. Corrija o telefone de um dos clientes criados.
+
+UPDATE CLIENTE
+SET TELEFONE = '199999999928'
+WHERE ID_CLIENTE = 3;
+

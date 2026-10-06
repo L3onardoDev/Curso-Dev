@@ -62,7 +62,6 @@ ORDER BY Valor_total DESC;
 -- 11. Informe quantos produtos estão cadastrados.
 SELECT COUNT(*) AS Quantidade_Produtos FROM Produto;
 
-
 -- 12. Mostre menor preço, maior preço e preço médio dos produtos.
 SELECT MIN(Preco) AS Menor_preco,
     MAX(Preco) AS Maior_preco,
@@ -70,11 +69,24 @@ SELECT MIN(Preco) AS Menor_preco,
 FROM Produto;
 -- 13. Informe quantos clientes existem em cada cidade.
 
+SELECT Cidade,
+COUNT(*) AS Quantidade_Clientes
+FROM Cliente
+GROUP BY Cidade;
+
 -- 14. Mostre somente as cidades que possuem dois ou mais clientes.
 
+SELECT Cidade,
+    COUNT(*) AS Quantidade_Clientes
+FROM Cliente
+GROUP BY Cidade
+HAVING COUNT(*) >= 2;
 
 -- 15. Calcule o faturamento total considerando apenas pedidos FINALIZADOS.
 
+SELECT SUM(Valor_total) AS Faturamento
+FROM Pedido
+WHERE Status_Pedido = 'FINALIZADO';
 
 -- PARTE D - RELACIONAMENTOS
 
