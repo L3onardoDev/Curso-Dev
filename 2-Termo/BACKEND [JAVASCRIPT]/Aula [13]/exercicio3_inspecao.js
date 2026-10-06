@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const amostrasColetadas = [12.1, 12.3, 11.9, 12.0];
 
-// Verifica se todas as amostras atendem ao critério mínimo de 12.0 mm
+// Verifica se todas as amostrass atendem ao critério mínimo de 12.0 mm
 let aprovado = true;
 for (let i = 0; i < amostrasColetadas.length; i++) {
   if (amostrasColetadas[i] < 12.0) {
