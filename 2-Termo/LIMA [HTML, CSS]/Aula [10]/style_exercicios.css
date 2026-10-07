@@ -1,0 +1,56 @@
+.equipe {
+
+/* Exercicio 1: */
+  display: flex;
+  flex-direction: row;
+
+/* Exercicio 2: */
+  gap: 30px;
+
+/* Exercicio 3: */
+  justify-content: flex-start; /* Moveu os nomes para o lado esquerdo da pagina*/
+  justify-content: center; /* Centralizou os nomes */
+  justify-content: flex-end; /* Moveu os nomes para o lado direito */
+  justify-content: space-between; /* Moveu o primeiro nome para o final e o ultimo para o começo */
+  justify-content: space-evenly; /* Deixou um espaçamento entre os nomes*/
+
+/* Exercicio 4: */
+ }
+
+.area {
+  display: flex;
+  height: 129px;
+  align-items: center;
+}
+
+.elemento-1 {
+  height: 20px;
+}
+
+.elemento-2 {
+  height: 70px;
+}
+
+.elemento-3 {
+  height: 120px;
+}
+
+/* Exercicio 5: */
+.cards {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Exercicio 6: */
+
+.servicos {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.article {
+    flex: 1;
+}
