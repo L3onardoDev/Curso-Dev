@@ -1,0 +1,51 @@
+/* Exercício 01 */
+.flex-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Exercício 02 */
+.flex-grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Exercício 03 */
+.flex-grid3 {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Pelo oque eu entendi o 'grid-template-columns' esta separando em 2 partes a primeira parte eo 1fr esta separando em 1 parte.*/
+}
+
+/* Exercício 04 */
+.flex-grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+}
+
+/* Exercício 05 */
+.flex-grid5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 900px) {
+    .flex-grid5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .flex-grid5 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Execício 06 */
+/* repeat(
+auto-fit,
+minmax(220px, 1fr)
+) */
+.flex-grid-teste {
+    grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+}
