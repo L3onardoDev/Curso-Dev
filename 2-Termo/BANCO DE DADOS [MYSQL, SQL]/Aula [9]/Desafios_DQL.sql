@@ -114,22 +114,49 @@ ON I.ID_Produto = P.ID_Produto;
 
 
 -- 19. Mostre todos os clientes, inclusive aqueles que nunca fizeram pedidos.
-
+SELECT C.NOME, P.ID_PEDIDO, P.DATA_PEDIDO
+FROM CLIENTE AS C
+LEFT JOIN PEDIDO AS P
+ON P.ID_CLIENTE = C.ID_CLIENTE
+ORDER BY C.NOME;
 
 -- 20. Liste apenas os clientes que nunca fizeram pedidos.
-
+SELECT C.ID_CLIENTE, C.NOME
+FROM CLIENTE AS C
+LEFT JOIN PEDIDO AS P
+ON P.ID_CLIENTE = C.ID_CLIENTE
+WHERE P.ID_PEDIDO IS NULL;
 
 -- PARTE E - DESAFIO GERENCIAL
 
 -- 21. Informe quantos pedidos FINALIZADOS cada cliente realizou e quanto
 --     cada cliente gastou. Ordene do maior gasto para o menor.
-
+SELECT C.NOME AS CLIENTE, COUNT(P.ID_PEDIDO) AS QTDE_PEDIDOS, SUM(P.VALOR_TOTAL) AS TOTAL_COMPRADO
+FROM CLIENTE AS C
+INNER JOIN PEDIDO AS P
+ON P.ID_CLIENTE = C.ID_CLIENTE
+WHERE P.STATUS_PEDIDO = 'FINALIZADO'
+GROUP BY C.ID_CLIENTE, C.NOME
+ORDER BY TOTAL_COMPRADO DESC;
 
 -- 22. Mostre a quantidade de produtos e o preço médio de cada categoria.
-
+SELECT C.NOME_CATEGORIA AS CATEGORIA, COUNT(P.ID_PRODUTO) AS QTDE_PRODUTOS, AVG(P.PRECO) AS PRECO_MEDIO
+FROM CATEGORIA AS C
+LEFT JOIN PRODUTO AS P ON C.ID_CATEGORIA = P.ID_CATEGORIA
+GROUP BY C.ID_CATEGORIA, C.NOME_CATEGORIA;
 
 -- 23. Descubra quais produtos possuem preço superior ao preço médio geral.
-
+SELECT NOME_PRODUTO, PRECO
+FROM PRODUTO
+WHERE PRECO > (SELECT AVG(PRECO) FROM PRODUTO);
 
 -- 24. Classifique os produtos como Econômico, Intermediário ou Premium.
---     Defina e informe suas faixas de preço.
+-- Defina e informe suas faixas de preço.
+SELECT NOME_PRODUTO, PRECO,
+CASE
+WHEN PRECO < 8.00 THEN 'Econômico'
+WHEN PRECO <= 15.00 THEN 'Intermediário'
+ELSE 'Premium'
+END AS CLASSIFICACAO
+FROM PRODUTO
+ORDER BY PRECO;
