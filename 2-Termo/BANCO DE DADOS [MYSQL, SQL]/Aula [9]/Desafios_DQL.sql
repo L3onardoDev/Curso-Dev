@@ -91,13 +91,26 @@ WHERE Status_Pedido = 'FINALIZADO';
 -- PARTE D - RELACIONAMENTOS
 
 -- 16. Liste cada pedido exibindo id, data, nome do cliente, status e valor total.
+SELECT P.ID_Pedido, P.Data_Pedido, C.Nome AS Nome_Cliente,
+P.Status_Pedido, P.Valor_total
+FROM Pedido P
+INNER JOIN Cliente C 
+ON P.ID_Cliente = C.ID_Cliente;
 
 
 -- 17. Liste cada produto acompanhado do nome de sua categoria.
+SELECT P.Nome_Produto, C.Nome_Categoria
+FROM Produto P
+INNER JOIN Categoria C
+ON P.ID_Categoria = C.ID_Categoria;
 
 
--- 18. Gere um relatório dos itens vendidos: pedido, produto, quantidade,
---     preço unitário e subtotal.
+-- 18. Gere um relatório dos itens vendidos: pedido, produto, quantidade, preço unitário e subtotal.
+SELECT I.ID_Pedido, P.Nome_Produto, I.Quantidade, I.Preco_Unitario,
+(I.Quantidade * I.Preco_Unitario) AS Subtotal
+FROM Item_Pedido I
+INNER JOIN Produto P
+ON I.ID_Produto = P.ID_Produto;
 
 
 -- 19. Mostre todos os clientes, inclusive aqueles que nunca fizeram pedidos.
