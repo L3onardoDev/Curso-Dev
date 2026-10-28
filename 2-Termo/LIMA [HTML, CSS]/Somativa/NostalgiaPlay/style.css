@@ -1,0 +1,17 @@
+* {
+    color: white;
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(6, 32, 117);
+    font-weight: bolder;
+}
+
+.menu-nav {
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+}
