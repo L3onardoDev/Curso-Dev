@@ -50,6 +50,11 @@ Curso-Dev/
 │       └── ...
 │
 ├── 2-Termo/
+│   ├── APLICATIVOS [GERAL]/
+│   ├── BACKEND [JAVASCRIPT]/
+│   ├── BANCO DE DADOS [MYSQL, SQL]/
+│   ├── LIMA [HTML, CSS]/
+│   └── PROJETOS [GERAL]/
 │
 ├── JavaScript_Conceitos/
 │
@@ -74,6 +79,40 @@ Materiais e atividades introdutórias sobre conceitos de redes de computadores e
 ### Levantamento de requisitos
 
 Atividades voltadas à compreensão, identificação e organização dos requisitos de um sistema, disponíveis em [`Levantamento_Requisitos`](./1-Termo/Levantamento_Requisitos).
+
+### 2º Termo
+
+O segundo termo reúne conteúdos mais direcionados ao desenvolvimento de aplicações web e à organização de sistemas. Os materiais estão separados por área para facilitar a consulta e acompanhar a evolução dos estudos.
+
+#### Backend com JavaScript
+
+Atividades pessoais, exercícios e avaliações de **back-end com JavaScript**, incluindo projetos com Node.js e uso de dependências organizadas por `package.json`.
+
+Pasta: [`BACKEND [JAVASCRIPT]`](./2-Termo/BACKEND%20%5BJAVASCRIPT%5D)
+
+#### Banco de dados — MySQL e SQL
+
+Exercícios de modelagem conceitual e lógica, relacionamentos, comandos DDL, DML, DQL e TCL, além de scripts para atividades como biblioteca, academia e SmartCoffee.
+
+Pasta: [`BANCO DE DADOS [MYSQL, SQL]`](./2-Termo/BANCO%20DE%20DADOS%20%5BMYSQL,%20SQL%5D)
+
+#### LIMA — HTML e CSS
+
+Práticas de desenvolvimento de interfaces com HTML e CSS, exercícios de estruturação de páginas, estilização, wireframes, identidade visual e projetos como DevSolutions e SmartCoffee.
+
+Pasta: [`LIMA [HTML, CSS]`](./2-Termo/LIMA%20%5BHTML,%20CSS%5D)
+
+#### Projetos gerais
+
+Projetos desenvolvidos em grupo e atividades integradoras, incluindo páginas web e a organização do projeto SmartCoffee.
+
+Pasta: [`PROJETOS [GERAL]`](./2-Termo/PROJETOS%20%5BGERAL%5D)
+
+#### Aplicativos e ferramentas
+
+Arquivos e ferramentas de apoio utilizados durante as atividades do termo, incluindo materiais relacionados à modelagem e organização de projetos.
+
+Pasta: [`APLICATIVOS [GERAL]`](./2-Termo/APLICATIVOS%20%5BGERAL%5D)
 
 ### Avaliações e atividades práticas
 
