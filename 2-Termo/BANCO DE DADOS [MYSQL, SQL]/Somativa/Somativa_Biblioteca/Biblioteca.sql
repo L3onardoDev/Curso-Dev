@@ -176,7 +176,7 @@ GROUP BY U.ID_USUARIO, U.NOME
 ORDER BY QTD_EMPRESTIMOS DESC;
 
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
--- ~~~~~~~~~~~~~~~ FASE 4 — TCL, TRANSAÇÕES E INTEGRIDADE ~~~~~~~~~~~~~~~~~
+-- ~~~~~~~~~~~~~~~ FASE 4 — TCL, TRANSAÇÕES E INTEGRIDADE. ~~~~~~~~~~~~~~~~~
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -- 21. Transação de empréstimo — 7 pts
