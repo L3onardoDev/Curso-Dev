@@ -127,6 +127,8 @@ INSERT INTO CLIENTE (NOME, EMAIL, TELEFONE, ATIVO) VALUES
 DELETE FROM CLIENTE
 WHERE ID_CLIENTE = 4;
 
+-- Não permite apagar o cliente por conta da fk, que existe um jogo registrado no cliente.
+
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 -- ~~~~~~~~~~ 6. Fase 3 - DQL: consultas e análise (30 pontos)   ~~~~~~~~~~
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
