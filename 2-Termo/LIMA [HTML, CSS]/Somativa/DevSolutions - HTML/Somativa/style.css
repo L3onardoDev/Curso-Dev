@@ -1,0 +1,77 @@
+/*
+  Cores: azul escuro #1f2a44, azul claro #bfe3ee, branco
+  Fonte: Arial
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+header, footer {
+  background: #1f2a44;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+section {
+  padding: 20px;
+}
+
+.banner {
+  background: #bfe3ee;
+  text-align: center;
+}
+
+.banner img {
+  width: 250px;
+}
+
+.botao {
+  background: #1f2a44;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100px;
+}
+
+@media (max-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
