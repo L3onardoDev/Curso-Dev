@@ -1,203 +1,133 @@
-<!-- ----- // Anotações Da Aula \\ ----- -->
-
-<!-- <b>Negrito</b> -->
-<!-- <i>Italico</i> -->
-<!-- <br>Quebra Linha<br>  --> 
-<!-- <p>Paragrafo</p> -->
-<!-- <hr>Linhas ao Texto<hr> -->
-<!-- <center>Centraliza o Texto</center> -->
-<!-- <big>Texto "Grande"</big> -->
-<!-- <small>Texto "Pequeno"</small> -->
-
-menu-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
+1. SELETORES E REGRAS BÁSICAS
+* {                         /* Seleciona todos os elementos da página */
+    margin: 0;              /* Remove o espaço externo */
+    padding: 0;             /* Remove o espaço interno */
+    box-sizing: border-box; /* Faz largura e altura incluírem padding e borda */
 }
 
-.menu-nav a:hover {
-  color: #00e5ff;
+body {                      /* Seleciona o corpo da página */
+    background-color: white;/* Define a cor de fundo */
+    color: black;            /* Define a cor do texto */
+    font-family: Arial;      /* Define a fonte do texto */
+    font-size: 16px;         /* Define o tamanho do texto */
+    line-height: 1.5;        /* Define a altura entre as linhas */
 }
 
-.section-01 {
-  display: flex;
-  padding: 40px;
-  align-items: center;
-  gap: 40px;
+h1 {                         /* Seleciona todos os títulos h1 */
+    color: blue;              /* Define a cor do título */
+    text-align: center;       /* Alinha o texto ao centro */
 }
 
-.inicio {
-  flex: 1;
+.classe {                    /* Seleciona elementos que possuem class="classe" */
+    background-color: gray;  /* Define a cor de fundo */
 }
 
-.sub-titulo {
-  color: #00e5ff;
-  font-size: 14px;
-  margin-bottom: 10px;
+#identificador {             /* Seleciona o elemento que possui id="identificador" */
+    color: red;               /* Define a cor do texto */
 }
 
-.titulo-01 {
-  font-size: 36px;
-  margin-bottom: 15px;
+/* 2. CORES E FUNDOS */
+color: red;                  /* Altera a cor do texto */
+background-color: yellow;    /* Altera a cor de fundo */
+background-image: url("imagem.jpg"); /* Coloca uma imagem como fundo */
+background-size: cover;      /* Ajusta a imagem para cobrir o espaço */
+background-position: center; /* Centraliza a imagem de fundo */
+background-repeat: no-repeat;/* Impede a repetição da imagem */
+opacity: 0.5;                /* Define a transparência do elemento */
+
+/* 3. TEXTOS E FONTES */
+font-family: Arial;          /* Escolhe o tipo de fonte */
+font-size: 20px;             /* Define o tamanho da fonte */
+font-weight: bold;           /* Deixa o texto em negrito */
+font-style: italic;          /* Deixa o texto em itálico */
+text-align: center;          /* Alinha o texto */
+text-decoration: underline;  /* Adiciona sublinhado */
+text-transform: uppercase;   /* Transforma o texto em letras maiúsculas */
+text-shadow: 2px 2px 4px gray; /* Adiciona sombra ao texto */
+letter-spacing: 2px;         /* Define o espaço entre letras */
+
+/* 4. TAMANHOS E ESPAÇAMENTOS */
+width: 300px;                /* Define a largura */
+height: 200px;               /* Define a altura */
+max-width: 100%;             /* Define a largura máxima */
+min-height: 100px;           /* Define a altura mínima */
+margin: 10px;                /* Define o espaço externo */
+margin-top: 10px;            /* Define o espaço externo superior */
+padding: 10px;               /* Define o espaço interno */
+padding-left: 20px;          /* Define o espaço interno esquerdo */
+
+/* 5. BORDAS E SOMBRAS */
+border: 1px solid black;     /* Cria uma borda */
+border-radius: 10px;         /* Arredonda os cantos */
+border-top: 2px solid red;   /* Cria uma borda somente em cima */
+box-shadow: 2px 2px 5px gray;/* Adiciona sombra ao elemento */
+outline: none;               /* Remove o contorno padrão */
+
+/* 6. DISPLAY E POSICIONAMENTO */
+display: block;              /* Faz o elemento ocupar a linha disponível */
+display: inline;             /* Faz o elemento ficar na mesma linha */
+display: inline-block;       /* Permite ficar na mesma linha e ter dimensões */
+display: none;               /* Esconde o elemento */
+position: relative;           /* Posiciona em relação à posição original */
+position: absolute;           /* Posiciona em relação ao ancestral posicionado */
+position: fixed;              /* Fixa o elemento na tela */
+top: 0;                       /* Define a distância do topo */
+right: 0;                     /* Define a distância da direita */
+bottom: 0;                    /* Define a distância de baixo */
+left: 0;                      /* Define a distância da esquerda */
+z-index: 10;                  /* Define a ordem de sobreposição */
+
+/* 7. FLEXBOX */
+display: flex;                /* Ativa o Flexbox */
+flex-direction: row;           /* Organiza os itens em linha */
+flex-direction: column;        /* Organiza os itens em coluna */
+justify-content: center;       /* Alinha os itens no eixo principal */
+align-items: center;           /* Alinha os itens no eixo transversal */
+flex-wrap: wrap;               /* Permite que os itens quebrem para outra linha */
+gap: 10px;                     /* Define o espaço entre os itens */
+
+/* 8. GRID */
+display: grid;                 /* Ativa o CSS Grid */
+grid-template-columns: 1fr 1fr;/* Cria duas colunas de mesma proporção */
+grid-template-rows: auto auto; /* Define duas linhas com altura automática */
+place-items: center;           /* Centraliza os itens nas células */
+column-gap: 10px;              /* Define o espaço entre colunas */
+row-gap: 10px;                 /* Define o espaço entre linhas */
+
+/* 9. LINKS, BOTÕES E INTERAÇÃO */
+text-decoration: none;         /* Remove a decoração do texto, comum em links */
+cursor: pointer;               /* Mostra o cursor de clique */
+:hover {                       /* Aplica estilos quando o mouse passa por cima */
+    background-color: blue;    /* Muda a cor de fundo ao passar o mouse */
+}
+:focus {                       /* Aplica estilos quando o elemento recebe foco */
+    outline: 2px solid blue;   /* Mostra um contorno de foco */
+
+/* 10. TRANSIÇÕES E ANIMAÇÕES */
+transition: all 0.3s ease;     /* Suaviza mudanças de estilo */
+transform: scale(1.1);         /* Aumenta o tamanho do elemento */
+transform: rotate(10deg);      /* Gira o elemento */
+animation: aparecer 1s;         /* Aplica uma animação chamada aparecer */
+
+/* Exemplo de animação */
+@keyframes aparecer {          /* Cria uma animação chamada aparecer */
+    from { opacity: 0; }       /* Define o estado inicial */
+    to { opacity: 1; }         /* Define o estado final */
 }
 
-.legenda {
-  color: #aaaaaa;
-  margin-bottom: 20px;
+/* 11. RESPONSIVIDADE */
+@media (max-width: 600px) {    /* Aplica regras quando a tela tem até 600px */
+    body {                     /* Seleciona o corpo nessa condição */
+        font-size: 14px;       /* Diminui o tamanho do texto em telas pequenas */
+    }
 }
 
-.botao {
-  background-color: #ff007f;
-  color: #ffffff;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.imagem {
-  flex: 1;
-  background-color: #161824;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.imagem img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.imagem figcaption {
-  margin-top: 10px;
-  color: #ffcc00;
-  font-weight: bold;
-}
-
-.section-02 {
-  padding: 40px;
-}
-
-.titulo-02 {
-  font-size: 28px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.classi-menu {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin-top: 20px;
-}
-
-.classi-menu li {
-  flex: 1;
-}
-
-.imagem-classicos {
-  background-color: #161824;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #2a2e45;
-}
-
-.imagem-classicos img {
-  width: 100%;
-  height: 200px;
-  border-radius: 8px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.titulo-03, .titulo-04 {
-  font-size: 18px;
-}
-
-.herois-menu {
-  padding: 40px;
-  background-color: #12131c;
-}
-
-.titulo-05 {
-  font-size: 28px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.interno-herois ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin-top: 20px;
-}
-
-.interno-herois li {
-  flex: 1;
-}
-
-.menu-interno-herois {
-  background-color: #161824;
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid #2a2e45;
-}
-
-.menu-interno-herois img {
-  width: 100%;
-  height: 180px;
-  border-radius: 8px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.titulo-06, .titulo-07, .titulo-08 {
-  font-size: 16px;
-}
-
-.section-03 {
-  padding: 40px;
-}
-
-.section-03 h2 {
-  font-size: 28px;
-  margin-top: 10px;
-}
-
-.section-03 ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  list-style: none;
-  margin-top: 20px;
-}
-
-.section-03 li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffcc00;
-  color: #000000;
-  padding: 15px 25px;
-  border-radius: 10px;
-}
-
-.section-03 li:nth-child(2) {
-  background-color: #00e5ff;
-}
-
-.section-03 li:nth-child(3) {
-  background-color: #ff007f;
-  color: #ffffff;
-}
-
-.section-03 h4 {
-  font-size: 20px;
-}
-
-.section-03 img {
-  height: 40px;
-}
+/* 12. UNIDADES MAIS USADAS
+px   = pixels, medida fixa
+%    = porcentagem em relação ao elemento de referência
+em   = unidade relativa ao tamanho da fonte do elemento
+rem  = unidade relativa ao tamanho da fonte raiz
+vw   = porcentagem da largura da tela
+vh   = porcentagem da altura da tela
+fr   = fração do espaço disponível no CSS Grid
+*/
