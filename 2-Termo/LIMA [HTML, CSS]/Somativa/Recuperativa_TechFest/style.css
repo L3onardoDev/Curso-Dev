@@ -85,6 +85,10 @@ section {
   text-align: center;
 }
 
+.card:hover figcaption {
+    transform: scale(1.1);
+}
+
 .card img {
   width: 100%;
   max-width: 160px;
@@ -109,7 +113,7 @@ section {
 footer p {
   color: #fff;
 }
-/* CSS básico solicitado para Programação e Sobre */
+
 .programacao {
   background: #fff;
   border: 1px solid #d5dce6;
