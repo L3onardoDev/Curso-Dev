@@ -11,6 +11,10 @@ img {
   max-width: 100%;
 }
 
+header h1 {
+  color: white;
+}
+
 header, footer {
   background: #7718c5;
   color: white;
@@ -51,7 +55,6 @@ section {
 }
 
 .banner {
-  background: #a160df;
   text-align: center;
 }
 
@@ -60,15 +63,12 @@ section {
 }
 
 .botao {
-  display: inline-block;
   margin-top: 20px;
   background: #000000;
   color: #fff;
   padding: 12px 24px;
-  border-radius: 6px;
   list-style: none;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .cards {
@@ -93,4 +93,63 @@ section {
 
 .card h3 {
   color: #1f2a44;
+}
+
+.card p {
+  color: #555;
+  font-size: 14px;
+}
+.atracoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  color: #fff;
+}
+/* CSS básico solicitado para Programação e Sobre */
+.programacao {
+  background: #fff;
+  border: 1px solid #d5dce6;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.programacao h2 {
+  margin-top: 0;
+}
+
+.programacao ul {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.programacao li {
+  color: black;
+  padding: 12px 22px;
+  border-radius: 4px;
+}
+
+.sobre h2 {
+  color: black;
+  margin-top: 0;
+}
+
+.sobre p {
+  color: #555555;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .programacao li {
+    width: 100%;
+  }
 }
