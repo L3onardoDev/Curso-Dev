@@ -1,0 +1,10 @@
+.link-ant {
+    text-decoration: none;
+    list-style: none;
+    border-radius: 120px;
+    border: 1px solid orange;
+    background-color: green;
+    color: white;
+    padding: 3px;
+    margin: 23px;
+}
